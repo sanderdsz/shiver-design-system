@@ -18,9 +18,9 @@ export interface Props {
     | "primary-flat";
 }
 
-const Button: React.FC<Props> = ({ theme }) => (
+const Button: React.FC<Props> = ({ children, theme }) => (
   <div data-testid="Button">
-    <button className={`${theme}`}>Hello world</button>
+    <button className={`${theme}`}>{children}</button>
   </div>
 );
 
