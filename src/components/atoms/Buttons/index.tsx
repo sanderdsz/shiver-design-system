@@ -1,8 +1,26 @@
 import React from "react";
 
-const Button: React.FC = () => (
+import "./styles.scss";
+
+export interface Props {
+  theme:
+    | "primary"
+    | "info"
+    | "success"
+    | "warning"
+    | "danger"
+    | "disabled"
+    | "primary-outline"
+    | "info-outline"
+    | "success-outline"
+    | "warning-outline"
+    | "danger-outline"
+    | "primary-flat";
+}
+
+const Button: React.FC<Props> = ({ theme }) => (
   <div data-testid="Button">
-    <button>Hello world</button>
+    <button className={`${theme}`}>Hello world</button>
   </div>
 );
 

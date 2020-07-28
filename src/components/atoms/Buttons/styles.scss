@@ -1,0 +1,225 @@
+@import "../../../variables.scss";
+
+button {
+  position: relative;
+  //font-size: 16px;
+  //font-weight: 600;
+  text-align: center;
+  padding: 3px 15px;
+  cursor: pointer;
+  user-select: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  //height: 32px;
+  //min-width: 96px;
+  border: none;
+  border-radius: 4px;
+  background-color: #fff;
+  border-width: 1px solid;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  color: #fff;
+  -webkit-transition: background 0.2s ease;
+  -moz-transition: background 0.2s ease;
+  -o-transition: background 0.2s ease;
+  transition: color 200ms ease-in 0s, border-color 200ms ease-in 0s,
+    background-color 200ms ease-in 0s, filter 200ms ease-in 0s;
+}
+
+.primary {
+  background-color: $snow-04;
+  border-color: $snow-04;
+  color: $polar-night-04;
+  &:hover {
+    filter: brightness(90%);
+  }
+}
+
+.info {
+  background-color: $frost-02;
+  color: $polar-night-01;
+  &:hover {
+    filter: brightness(90%);
+  }
+}
+
+.success {
+  background-color: $aurora-04;
+  border-color: $aurora-04;
+  color: $polar-night-01;
+  &:hover {
+    filter: brightness(90%);
+  }
+}
+
+.warning {
+  background-color: $aurora-03;
+  border-color: $aurora-03;
+  color: $polar-night-01;
+  &:hover {
+    filter: brightness(90%);
+  }
+}
+
+.danger {
+  background-color: $aurora-01;
+  border-color: $aurora-01;
+  color: $polar-night-01;
+  &:hover {
+    filter: brightness(90%);
+  }
+}
+
+.disabled {
+  background-color: rgba($snow-03, 0.4);
+  border-color: $snow-04;
+  color: rgba($polar-night-04, 0.6);
+  opacity: 0.9;
+  box-shadow: none;
+  cursor: not-allowed;
+  border: 1px solid;
+  &:hover {
+    cursor: not-allowed;
+  }
+}
+
+.primary-outline {
+  background-color: $snow-01;
+  border-color: $polar-night-01;
+  color: $polar-night-04;
+  border: 1px solid;
+  &:hover {
+    color: $frost-04;
+    border-color: $frost-04;
+  }
+}
+body.dark-mode {
+  .primary-outline {
+    background-color: $polar-night-01;
+    color: $snow-01;
+    &:hover {
+      color: $frost-04;
+      border-color: $frost-04;
+    }
+  }
+}
+
+.info-outline {
+  background-color: $snow-01;
+  border-color: $frost-03;
+  color: $frost-03;
+  border: 1px solid;
+  &:hover {
+    background-color: rgba($frost-03, 0.2);
+  }
+}
+body.dark-mode {
+  .info-outline {
+    background-color: $polar-night-01;
+    color: $frost-03;
+    &:hover {
+      background-color: rgba($frost-03, 0.2);
+      color: $frost-03;
+      border-color: $frost-03;
+    }
+  }
+}
+
+.success-outline {
+  background-color: $snow-01;
+  border-color: $aurora-04;
+  color: $aurora-04;
+  border: 1px solid;
+  &:hover {
+    background-color: rgba($aurora-04, 0.2);
+  }
+}
+body.dark-mode {
+  .success-outline {
+    background-color: $polar-night-01;
+    color: $aurora-04;
+    &:hover {
+      background-color: rgba($aurora-04, 0.2);
+      color: $aurora-04;
+      border-color: $aurora-04;
+    }
+  }
+}
+
+.warning-outline {
+  background-color: $snow-01;
+  border-color: $aurora-03;
+  color: $aurora-03;
+  border: 1px solid;
+  &:hover {
+    background-color: rgba($aurora-03, 0.2);
+  }
+}
+body.dark-mode {
+  .warning-outline {
+    background-color: $polar-night-01;
+    color: $aurora-03;
+    &:hover {
+      background-color: rgba($aurora-03, 0.2);
+      color: $aurora-03;
+      border-color: $aurora-03;
+    }
+  }
+}
+
+.danger-outline {
+  background-color: $snow-01;
+  border-color: $aurora-02;
+  color: $aurora-02;
+  border: 1px solid;
+  &:hover {
+    background-color: rgba($aurora-02, 0.2);
+  }
+}
+body.dark-mode {
+  .danger-outline {
+    background-color: $polar-night-01;
+    color: $aurora-02;
+    &:hover {
+      background-color: rgba($aurora-02, 0.2);
+      color: $aurora-02;
+      border-color: $aurora-02;
+    }
+  }
+}
+
+.primary-flat {
+  background-color: $snow-01;
+  color: $polar-night-04;
+  &:hover {
+    background-color: $snow-03;
+  }
+}
+body.dark-mode {
+  .primary-flat {
+    background-color: $polar-night-01;
+    color: $snow-01;
+    &:hover {
+      background-color: $polar-night-03;
+    }
+  }
+}
+
+.primary-flat {
+  background-color: $snow-01;
+  color: $polar-night-04;
+  &:hover {
+    background-color: $snow-03;
+  }
+}
+body.dark-mode {
+  .primary-flat {
+    background-color: $polar-night-01;
+    color: $snow-01;
+    &:hover {
+      background-color: $polar-night-03;
+    }
+  }
+}
