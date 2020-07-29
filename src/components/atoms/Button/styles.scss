@@ -213,6 +213,9 @@ body.dark-mode {
   &:hover {
     background-color: $snow-03;
   }
+  &:active {
+    background-color: $snow-03;
+  }
 }
 body.dark-mode {
   .primary-flat {
