@@ -10,7 +10,7 @@ export default create({
   appBg: "#e5e9f0",
   appContentBg: "#eceff4",
   appBorderColor: "#c8ccd2",
-  appBorderRadius: 12,
+  appBorderRadius: 6,
 
   // Text colors
   textColor: "#2e3440",
@@ -25,5 +25,5 @@ export default create({
   inputBg: "#e5e9f0",
   inputBorder: "#2e3440",
   inputTextColor: "#2e3440",
-  inputBorderRadius: 12,
+  inputBorderRadius: 6,
 });

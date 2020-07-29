@@ -16,11 +16,12 @@ export interface Props {
     | "warning-outline"
     | "danger-outline"
     | "primary-flat";
+  onClick?: () => void;
 }
 
-const Button: React.FC<Props> = ({ children, theme }) => (
+const Button: React.FC<Props> = ({ children, theme, onClick }) => (
   <div data-testid="Button">
-    <button className={`${theme}`}>{children}</button>
+    <button className={`${theme}`} onClick={onClick}>{children}</button>
   </div>
 );
 

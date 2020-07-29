@@ -1,5 +1,6 @@
 import React from "react";
 import { withKnobs, text } from "@storybook/addon-knobs";
+import { action } from '@storybook/addon-actions'
 
 import Button from "./";
 
@@ -9,7 +10,7 @@ export default {
 };
 
 export const Primary = () => (
-  <Button theme="primary">{text("Label", "Primary")}</Button>
+  <Button theme="primary" onClick={action('clicked')}>{text("Label", "Primary")}</Button>
 );
 
 export const Info = () => <Button theme="info">{text("Label", "Info")}</Button>;
