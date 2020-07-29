@@ -1,11 +1,14 @@
 {
   "name": "shiver-design-system",
-  "version": "1.0.0-alpha.3",
+  "version": "1.0.0-alpha.4",
   "main": "build/index.js",
   "module": "build/index.esm.js",
   "files": [
     "build"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@sanderdsz"
+  },
   "types": "build/index.d.ts",
   "description": "A skeleton to create your own React component library using Rollup, TypeScript, Sass and Storybook",
   "scripts": {
