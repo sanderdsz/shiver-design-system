@@ -14,8 +14,11 @@ export default create({
 
   // Text colors
   textColor: "#2e3440",
-  barTextColor: "#2e3440",
-  barSelectedColor: "#eceff4",
+  textInverseColor: "#88c0d0",
+
+  // Toolbar default and active colors
+  barTextColor: "#4c566a",
+  barSelectedColor: "#2e3440",
   barBg: "#c8ccd2",
 
   // Form colors

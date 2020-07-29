@@ -1,34 +1,47 @@
 import React from "react";
+import { withKnobs, text } from "@storybook/addon-knobs";
+
 import Button from "./";
 
 export default {
   title: "Button",
+  decorators: [withKnobs],
 };
 
-export const Primary = () => <Button theme="primary">Primary</Button>;
+export const Primary = () => (
+  <Button theme="primary">{text("Label", "Primary")}</Button>
+);
 
-export const Info = () => <Button theme="info">Info</Button>;
+export const Info = () => <Button theme="info">{text("Label", "Info")}</Button>;
 
-export const Success = () => <Button theme="success">Success</Button>;
+export const Success = () => (
+  <Button theme="success">{text("Label", "Success")}</Button>
+);
 
-export const Warning = () => <Button theme="warning">Warning</Button>;
+export const Warning = () => (
+  <Button theme="warning">{text("Label", "Warning")}</Button>
+);
 
-export const Danger = () => <Button theme="danger">Danger</Button>;
+export const Danger = () => (
+  <Button theme="danger">{text("Label", "Danger")}</Button>
+);
 
-export const Disabled = () => <Button theme="disabled">Disabled</Button>;
+export const Disabled = () => (
+  <Button theme="disabled">{text("Label", "Disabled")}</Button>
+);
 
 export const PrimaryOutline = () => (
-  <Button theme="primary-outline">Primary Outline</Button>
+  <Button theme="primary-outline">{text("Label", "Primary Outline")}</Button>
 );
 
 export const InfoOutline = () => (
-  <Button theme="info-outline">Info Outline</Button>
+  <Button theme="info-outline">{text("Label", "Info Outline")}</Button>
 );
 
 export const SuccessOutline = () => (
-  <Button theme="success-outline">Success Outline</Button>
+  <Button theme="success-outline">{text("Label", "Success Outline")}</Button>
 );
 
 export const PrimaryFlat = () => (
-  <Button theme="primary-flat">Primary Flat</Button>
+  <Button theme="primary-flat">{text("Label", "Primary Flat")}</Button>
 );
