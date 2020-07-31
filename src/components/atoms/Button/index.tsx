@@ -1,7 +1,6 @@
 import React from "react";
 
 import "./styles.scss";
-
 export interface Props {
   theme:
     | "primary"
@@ -19,10 +18,10 @@ export interface Props {
   onClick?: () => void;
 }
 
-const Button: React.FC<Props> = ({ children, theme, onClick }) => (
+export const Button: React.FC<Props> = ({ children, theme, onClick }) => (
   <div data-testid="Button">
     <button className={`${theme}`} onClick={onClick}>{children}</button>
   </div>
 );
 
-export default Button;
+//export default Button;
