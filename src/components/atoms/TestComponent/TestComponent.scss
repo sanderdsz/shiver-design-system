@@ -1,5 +1,5 @@
-@import "../variables.scss";
-@import "../typography.scss";
+@import "../../../variables.scss";
+@import "../../../typography.scss";
 
 .test-component {
   background-color: $snow-01;
@@ -13,7 +13,7 @@
   }
 
   &.test-component-secondary {
-    background-color: $harvey-black;
-    color: $harvey-white;
+    background-color: $polar-night-01;
+    color: $snow-01;
   }
 }
