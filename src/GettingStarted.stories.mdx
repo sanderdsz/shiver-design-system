@@ -1,0 +1,64 @@
+import { Meta, Story } from '@storybook/addon-docs/blocks';
+
+import { Button } from './components/atoms/Button'
+
+<Meta title="Introduction/Getting Started" />
+
+# Shiver
+### a chilly cold design system
+##
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
+This project is under construction, and uses:
+
+- [Rollup](https://github.com/rollup/rollup)
+- [Sass](https://sass-lang.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+
+It also features:
+
+- [Storybook](https://storybook.js.org/) to help create and show off the components
+- [Jest](https://jestjs.io/) and [React Testing Library](https://github.com/testing-library/react-testing-library) enabling testing of the components
+##
+
+### 📦 Install
+
+```
+npm install shiver-design-system
+```
+```
+yarn add shiver-design-system 
+```
+
+### 🔨 Setup
+#
+#### Testing
+
+```
+npm run test
+```
+
+#### Building
+
+```
+npm run build
+```
+
+#### Storybook
+
+To run a live-reload Storybook server on your local machine:
+```
+npm run storybook
+```
+
+### 🚀 Usage
+```
+import { Button } from 'shiver-design-system';
+
+const App = () => (
+  <Button theme="primary">
+    Click me!
+  </Button>
+);
+```

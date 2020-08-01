@@ -5,14 +5,18 @@ import { action } from '@storybook/addon-actions'
 import { Button } from '.';
 
 export default {
-  title: "Atoms/Button",
+  title: "Components/Atoms/Button",
   decorators: [withKnobs],
 
   parameters: {
     component: Button,
-    componentSubtitle: 'Core buttons components',
+    componentSubtitle: 'Button is a default component to display action in a page.',
   },
 };
+
+export const Default = () => (
+  <Button theme="primary">Button</Button>
+)
 
 export const Primary = () => (
   <Button theme="primary" onClick={action('clicked')}>{text("Label", "Primary")}</Button>
