@@ -8,27 +8,38 @@ import { Button } from './Button.tsx'
 
 # Button
 
+Buttons allow the user interact with just one click.
+
 ## Properties
 
 <Props of={Button} />
 
 ## Basic usage
 
-<Playground>
+<Playground style={{flexDirection: "row", display:"inline-flex"}}>
   <Button theme="primary">Some message</Button>
 </Playground>
 
-## Using different kinds
+## Default buttons
 
 <Playground>
-  <Button theme="primary">Some message</Button>
   <Button theme="info">Some message</Button>
   <Button theme="success">Some message</Button>
   <Button theme="danger">Some message</Button>
   <Button theme="warning">Some message</Button>
   <Button theme="disabled">Some message</Button>
+</Playground>
+
+## Outline Buttons
+
+<Playground>
   <Button theme="primary-outline">Some message</Button>
   <Button theme="info-outline">Some message</Button>
   <Button theme="success-outline">Some message</Button>
+</Playground>
+
+## Flat Buttons
+
+<Playground>
   <Button theme="primary-flat">Some message</Button>
 </Playground>
