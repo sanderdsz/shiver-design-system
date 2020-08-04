@@ -18,6 +18,7 @@
     font-size: 32px;
     text-decoration: none;
     color: #434c5e;
+    transition: color 200ms ease-in 0s;
     &:hover {
         color: #2e3440;
     }
