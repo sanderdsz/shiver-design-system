@@ -1,0 +1,28 @@
+---
+name: Button
+menu: Atoms
+---
+
+import { Playground, Props } from 'docz'
+import { Button } from './Button.tsx'
+
+# Button
+
+## Properties
+
+<Props of={Button} />
+
+## Basic usage
+
+<Playground>
+  <Button theme="primary">Some message</Button>
+</Playground>
+
+## Using different kinds
+
+<Playground>
+  <Button theme="info">Some message</Button>
+  <Button theme="success">Some message</Button>
+  <Button theme="danger">Some message</Button>
+  <Button theme="warning">Some message</Button>
+</Playground>

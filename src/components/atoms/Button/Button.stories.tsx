@@ -2,7 +2,7 @@ import React from "react";
 import { withKnobs, text } from "@storybook/addon-knobs";
 import { action } from '@storybook/addon-actions'
 
-import { Button } from '.';
+import { Button } from './Button';
 
 export default {
   title: "Components/Atoms/Button",

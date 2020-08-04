@@ -1,7 +1,10 @@
 const path = require("path");
 
 module.exports = {
-  stories: ["../src/**/*.stories.@(ts|tsx|js|jsx|mdx)"],
+  stories: [
+    "../docs/*.stories.@(ts|tsx|js|jsx|mdx)",
+    "../src/**/*.stories.@(ts|tsx|js|jsx|mdx)"
+  ],
   // Add any Storybook addons you want here: https://storybook.js.org/addons/
   addons: [
     "@storybook/addon-knobs",
