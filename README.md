@@ -1,6 +1,6 @@
 # Shiver Design System
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](src="https://img.shields.io/static/v1.svg?style=flat-square&label=License&message=MIT&logoColor=eceff4&logo=github&colorA=4c566a&colorB=88c0d0")](https://github.com/sanderdsz/shiver-design-system/blob/master/LICENSE)
 
 This project is under construction, and uses:
 
