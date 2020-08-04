@@ -38,4 +38,5 @@ export default {
     "README.md",
     "Button.stories.tsx",
   ],
+  dest: "/dist",
 };
