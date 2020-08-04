@@ -1,25 +1,24 @@
-/** @jsx jsx */
-import { jsx, Flex, Box } from 'theme-ui'
+import * as React from 'react'
 import { Link, useConfig } from 'docz'
 
-import logo from '@images/logo.svg'
-
-import * as styles from './styles'
+import './styles.scss'
 
 export const Logo = () => {
   const config = useConfig()
   return (
-    <div>
-      <Flex>
-        <Box sx={styles.logo}>
+    <div className="container">
+      <div className="logo">
+        <Link to="/">
           <img src="https://svgshare.com/i/NVw.svg"/>
-        </Box>
-        <Box sx={styles.title}>
-          <Link to="/" sx={styles.link}>
-            {config.title}
-          </Link>
-        </Box>
-      </Flex>
+        </Link>
+      </div>
+        <div className="title">
+          <div>
+            <Link to="/" className="link">
+              {config.title}
+            </Link>
+          </div>
+        </div>
     </div>
   )
 }
