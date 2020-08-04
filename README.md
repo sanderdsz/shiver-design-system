@@ -1,8 +1,7 @@
 # Shiver Design System
 
-<a href="https://github.com/sanderdsz/shiver-design-system/blob/master/LICENSE
-">
-<img src="https://img.shields.io/static/v1.svg?style=flat-square&label=License&message=MIT&logoColor=eceff4&logo=github&colorA=4c566a&colorB=88c0d0"/>
+<a href="https://github.com/sanderdsz/shiver-design-system/blob/master/LICENSE">
+  <img src="https://img.shields.io/static/v1.svg?style=flat-square&label=License&message=MIT&logoColor=eceff4&logo=github&colorA=4c566a&colorB=88c0d0"/>
 </a>
 
 This project is under construction, and uses:
