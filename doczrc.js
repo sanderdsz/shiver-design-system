@@ -1,6 +1,6 @@
 import * as path from 'path'
 
-import theme from "./docs/dracula.js";
+import theme from "./docs/theme/prism/prism";
 const PUBLIC = path.resolve(__dirname, 'public')
 
 export default {
