@@ -18,7 +18,10 @@
     "storybook": "start-storybook -p 6006",
     "storybook:export": "build-storybook",
     "generate": "node ./util/create-component",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "docz:dev": "docz dev",
+    "docz:build": "docz build",
+    "docz:serve": "docz build && docz serve"
   },
   "repository": {
     "type": "git",
@@ -61,6 +64,9 @@
     "@types/react-dom": "^16.9.8",
     "babel-loader": "^8.1.0",
     "babel-preset-react-app": "^9.1.2",
+    "docz": "^2.3.1",
+    "gatsby-plugin-sass": "^2.3.12",
+    "gatsby-theme-docz": "^2.3.1",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.9.0",
     "node-sass": "^4.14.1",
@@ -72,6 +78,7 @@
     "rollup-plugin-postcss": "^3.1.2",
     "rollup-plugin-typescript2": "^0.27.0",
     "sass-loader": "^8.0.0",
+    "theme-ui": "^0.3.1",
     "ts-jest": "^24.2.0",
     "typescript": "^3.7.2"
   }

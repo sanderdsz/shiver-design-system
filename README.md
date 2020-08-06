@@ -1,6 +1,8 @@
-# Shiver Design System
+<p align="center">
+  <img width="150" height="150" src="https://svgshare.com/i/NVw.svg">
+</p>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+# Shiver Design System
 
 This project is under construction, and uses:
 

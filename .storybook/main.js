@@ -1,19 +1,22 @@
 const path = require("path");
 
 module.exports = {
-  stories: ["../src/**/*.stories.@(ts|tsx|js|jsx|mdx)"],
+  stories: [
+    "../docs/storybook/*.stories.@(ts|tsx|js|jsx|mdx)",
+    "../src/**/*.stories.@(ts|tsx|js|jsx|mdx)",
+  ],
   // Add any Storybook addons you want here: https://storybook.js.org/addons/
   addons: [
     "@storybook/addon-knobs",
-    '@storybook/addon-actions',
+    "@storybook/addon-actions",
     "@storybook/addon-viewport",
     "@storybook/addon-storysource",
     {
       name: "@storybook/addon-docs",
       options: {
         configureJSX: true,
-      }
-    }
+      },
+    },
   ],
   webpackFinal: async (config) => {
     config.module.rules.push({
