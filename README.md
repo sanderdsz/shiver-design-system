@@ -4,6 +4,8 @@
 
 # Shiver Design System
 
+<img src="https://img.shields.io/static/v1.svg?style=flat-square&label=License&message=MIT&logoColor=eceff4&logo=github&colorA=4c566a&colorB=88c0d0"/>
+
 This project is under construction, and uses:
 
 - [Rollup](https://github.com/rollup/rollup)
