@@ -1,29 +1,33 @@
 @import "../../../variables.scss";
+@import "../../../typography.scss";
 
 button {
   position: relative;
-  //font-size: 16px;
-  //font-weight: 600;
+  height: 1.75rem;
+  padding: 0.05rem .75rem;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: $rubik;
+  font-size: 1rem;
   text-align: center;
-  padding: 3px 15px;
+
   cursor: pointer;
   user-select: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  //height: 32px;
-  //min-width: 96px;
+
   border: none;
   border-radius: 4px;
   border-width: 1px solid;
   box-sizing: border-box;
+
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-transition: background 0.2s ease;
   -moz-transition: background 0.2s ease;
   -o-transition: background 0.2s ease;
-  transition: color 200ms ease-in 0s, border-color 200ms ease-in 0s,
-    background-color 200ms ease-in 0s, filter 200ms ease-in 0s;
+  transition: color 200ms ease-in 0s, border-color 200ms ease-in 0s, background-color 200ms ease-in 0s, filter 200ms ease-in 0s;
 }
 
 .primary {

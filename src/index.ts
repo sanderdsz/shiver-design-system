@@ -1,4 +1,4 @@
-import TestComponent from "./components/atoms/TestComponent/TestComponent";
+import TestComponent from "./components/atoms/TestComponent/TestComponent"
 import { Button } from "./components/atoms/Button/Button"
-
-export { Button, TestComponent };
+import { Checkbox } from "./components/atoms/Checkbox/Checkbox"
+export { Button, Checkbox, TestComponent }

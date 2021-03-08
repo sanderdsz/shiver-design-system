@@ -1,12 +1,3 @@
-$font-family: "Avenir Next", Helvetica, Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
 
-@mixin font-defaults {
-  font-family: $font-family;
-}
-
-@mixin heading {
-  @include font-defaults;
-
-  font-size: 40px;
-  font-weight: bold;
-}
+$rubik: 'Rubik', sans-serif;
