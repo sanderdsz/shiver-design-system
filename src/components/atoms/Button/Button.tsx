@@ -1,4 +1,4 @@
-import React, { SFC } from 'react'
+import React, { FunctionComponent } from 'react'
 
 import "./Button.scss";
 
@@ -22,9 +22,18 @@ export interface ButtonProps {
     onClick?: () => void;
 }
 
-export const Button: SFC<ButtonProps> = ({ children, onClick, theme, ...rest }) => (
+export const Button: FunctionComponent<ButtonProps> = ({ 
+  children, 
+  onClick, 
+  theme, 
+  ...rest 
+}) => (
   <div>
-    <button className={`${theme}`} onClick={onClick} {...rest}>
+    <button 
+      className={`${theme}`} 
+      onClick={onClick} 
+      {...rest}
+    >
       {children}
     </button>
   </div>
