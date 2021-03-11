@@ -10,7 +10,7 @@ export default {
 
   parameters: {
     component: Checkbox,
-    componentSubtitle: 'teste',
+    componentSubtitle: 'Button is a default component to display action in a page.',
   },
 };
 

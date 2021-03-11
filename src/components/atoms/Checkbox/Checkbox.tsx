@@ -3,24 +3,21 @@ import React, { FunctionComponent } from 'react'
 import "./Checkbox.scss";
 
 export interface CheckboxProps {
-  theme:| "default";
-    onClick?: () => void;
+  size:
+    | "small"
+    | "medium"
+    | "large"
+  onClick?: () => void;
 }
 
 export const Checkbox: FunctionComponent<CheckboxProps> = ({ 
   children, 
   onClick, 
-  theme, 
+  size, 
   ...rest 
 }) => (
-  <div>
-    <input
-      type="checkbox" 
-      className={`${theme}`} 
-      onClick={onClick} 
-      {...rest}
-    >
-    </input>
-    <span>{children}</span>
+  <div className="checkbox">
+    <input type="checkbox" id="checkbox" />
+    <label for="checkbox">{children}</label>
   </div>
 )
