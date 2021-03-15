@@ -1,6 +1,5 @@
 @import "../../../variables.scss";
 
-
 .checkbox {
   display: inline-flex;
   position: relative;
@@ -42,8 +41,8 @@
   /* Style the checkmark/indicator */
   .checkmark {
     &:after {
-      left: 9px;
-      top: 5px;
+      left: 10px;
+      top: 4.5px;
       width: 5px;
       height: 10px;
       border: solid $polar-night-01;
