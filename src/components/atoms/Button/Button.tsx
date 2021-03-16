@@ -1,7 +1,6 @@
 import React, { FunctionComponent } from 'react'
 
-import "./Button.scss";
-
+import styles from "./Button.module.scss";
 export interface ButtonProps {
   /**
    * Set this to change button theme properties
@@ -30,7 +29,7 @@ export const Button: FunctionComponent<ButtonProps> = ({
 }) => (
   <div>
     <button 
-      className={`${theme}`} 
+      className={styles[theme]} 
       onClick={onClick} 
       {...rest}
     >

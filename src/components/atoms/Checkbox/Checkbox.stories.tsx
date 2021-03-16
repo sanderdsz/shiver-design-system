@@ -15,5 +15,17 @@ export default {
 };
 
 export const Default = () => (
-  <Checkbox theme="default">{text("Label", "Default")}</Checkbox>
+  <Checkbox checked theme="" >{text("Label", "Default")}</Checkbox>
+)
+
+export const Primary = () => (
+  <Checkbox theme="primary" >{text("Label", "Primary")}</Checkbox>
+)
+
+export const Secondary = () => (
+  <Checkbox theme="secondary" >{text("Label", "Secondary")}</Checkbox>
+)
+
+export const Disabled = () => (
+  <Checkbox theme="disabled" >{text("Label", "Disabled")}</Checkbox>
 )

@@ -1,24 +1,36 @@
 import React, { FunctionComponent } from 'react'
 
-import './Checkbox.scss'
+import styles from './Checkbox.module.scss'
 
 export interface CheckboxProps {
-  size:
-    | "small"
+  theme:
+    | "primary"
+    | "secondary"
+    | "disabled"
+    /*
+  size: 
     | "medium"
+    | "small"
     | "large"
-  onClick?: () => void;
+    */
+  checked?: boolean;
+  /*
+  onClick: (event: React.MouseEvent<HTMLElement, MouseEvent>) => void;
+  */
 }
 
 export const Checkbox: FunctionComponent<CheckboxProps> = ({ 
-  children, 
-  onClick, 
-  size, 
+  children,
+  checked, 
+  theme, 
   ...rest 
 }) => (
-  <label className="checkbox">
-      <input type="checkbox" />
+  <label className={`${styles.checkbox} ${styles[theme]}`}>
+      <input 
+        type="checkbox"
+        checked={checked}
+      />
       {children}
-      <span className="checkmark"></span>
+      <span className={styles.checkmark}></span>
   </label>
 )
