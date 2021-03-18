@@ -17,6 +17,7 @@ export interface CheckboxProps {
   /*
   onClick: (event: React.MouseEvent<HTMLElement, MouseEvent>) => void;
   */
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 export const Checkbox: FunctionComponent<CheckboxProps> = ({ 
@@ -29,6 +30,7 @@ export const Checkbox: FunctionComponent<CheckboxProps> = ({
       <input 
         type="checkbox"
         checked={checked}
+        {...rest}
       />
       {children}
       <span className={styles.checkmark}></span>
