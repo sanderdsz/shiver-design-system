@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react'
 
-import styles from './Checkbox.module.scss'
+import './Checkbox.scss'
 
 export interface CheckboxProps {
   theme:

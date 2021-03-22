@@ -4,6 +4,8 @@ import { action } from '@storybook/addon-actions'
 
 import { Checkbox } from './Checkbox';
 
+import './Checkbox.scss';
+
 export default {
   title: "Components/Atoms/Checkbox",
   decorators: [withKnobs],
@@ -14,10 +16,11 @@ export default {
   },
 };
 
-export const Primary = () => (
-  <Checkbox onChange={action('clicked')} theme="primary" >{text("Label", "Primary")}</Checkbox>
-)
-
-export const Secondary = () => (
-  <Checkbox onChange={action('clicked')} theme="secondary" >{text("Label", "Secondary")}</Checkbox>
+export const Html = () => (
+  <label className='checkbox'>
+      <input 
+        type="checkbox"
+      />
+      <span className='checkmark'></span>
+  </label>
 )

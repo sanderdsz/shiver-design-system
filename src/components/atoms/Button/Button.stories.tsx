@@ -1,8 +1,10 @@
-import React from "react";
-import { withKnobs, text } from "@storybook/addon-knobs";
+import React from "react"
+import { withKnobs, text } from "@storybook/addon-knobs"
 import { action } from '@storybook/addon-actions'
 
-import { Button } from './Button';
+import { Button } from './Button'
+
+import "./Button.scss"
 
 export default {
   title: "Components/Atoms/Button",
@@ -14,44 +16,42 @@ export default {
   },
 };
 
-export const Default = () => (
-  <Button theme="primary">Button</Button>
+export const Primary = () => (
+  <button class="primary">Primary</button>
 )
 
-export const Primary = () => (
-  <Button theme="primary" onClick={action('clicked')}>{text("Label", "Primary")}</Button>
+export const Info = () => (
+  <button class="info">Info</button>
 );
 
-export const Info = () => <Button theme="info" onClick={action('clicked')}>{text("Label", "Info")}</Button>;
-
 export const Success = () => (
-  <Button theme="success" onClick={action('clicked')}>{text("Label", "Success")}</Button>
+  <button class="success">Success</button>
 );
 
 export const Warning = () => (
-  <Button theme="warning" onClick={action('clicked')}>{text("Label", "Warning")}</Button>
+  <button class="warning">Warning</button>
 );
 
 export const Danger = () => (
-  <Button theme="danger" onClick={action('clicked')}>{text("Label", "Danger")}</Button>
+  <button class="danger">Danger</button>
 );
 
 export const Disabled = () => (
-  <Button theme="disabled" onClick={action('clicked')}>{text("Label", "Disabled")}</Button>
+  <button class="disabled">Disabled</button>
 );
 
 export const PrimaryOutline = () => (
-  <Button theme="primary-outline" onClick={action('clicked')}>{text("Label", "Primary Outline")}</Button>
+  <button class="primary-outline" >Primary Outline</button>
 );
 
 export const InfoOutline = () => (
-  <Button theme="info-outline" onClick={action('clicked')}>{text("Label", "Info Outline")}</Button>
+  <button class="info-outline">Info Outline</button>
 );
 
 export const SuccessOutline = () => (
-  <Button theme="success-outline" onClick={action('clicked')}>{text("Label", "Success Outline")}</Button>
+  <button class="success-outline">Success Outline</button>
 );
 
 export const PrimaryFlat = () => (
-  <Button theme="primary-flat" onClick={action('clicked')}>{text("Label", "Primary Flat")}</Button>
+  <button class="primary-flat">Primary Flat</button>
 );
