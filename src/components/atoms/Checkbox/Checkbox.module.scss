@@ -1,0 +1,83 @@
+@import "../../../variables.scss";
+@import "../../../typography.scss";
+
+.checkbox {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+
+  cursor: pointer;
+
+  /* Hide the browser's default checkbox and customize the new checkbox */
+ input {
+    appearance: none;
+
+    height: 1.15rem;
+    width: 1.15rem;
+    
+    border: 2px solid $snow-04;
+    border-radius: 5px;
+    outline: none;
+
+    transition-duration: 0.3s;
+    background-color: $snow-04;
+
+    cursor: pointer;
+
+    /* When the checkbox is checked, add a background */
+    &:checked {
+      border: 2px solid $snow-04;
+      background-color: $snow-04;
+      /* Create the checkmark/indicator (hidden when not checked) */
+      ~ {
+        .checkmark {
+          &:after {
+            display: inline-flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+  /* Style the checkmark/indicator */
+  .checkmark {
+    &:after {
+      left: 10px;
+      top: 4.5px;
+      width: 5px;
+      height: 10px;
+      border: solid $polar-night-01;
+      border-width: 0 2px 2px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
+}
+
+/* Show the checkmark when checked */
+.checkmark {
+	&:after {
+		content: "";
+		position: absolute;
+		display: none;
+	}
+}
+
+.primary {
+  input {
+    &:checked {
+      border-color: $frost-04;
+      background-color: $frost-04;
+    }
+  }
+}
+
+.secondary {
+  input {
+    &:checked {
+      border-color: $aurora-01;
+      background-color: $aurora-01;
+    }
+  }
+}

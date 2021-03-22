@@ -10,10 +10,14 @@ export default {
 
   parameters: {
     component: Checkbox,
-    componentSubtitle: 'teste',
+    componentSubtitle: 'Button is a default component to display action in a page.',
   },
 };
 
-export const Default = () => (
-  <Checkbox theme="default">{text("Label", "Default")}</Checkbox>
+export const Primary = () => (
+  <Checkbox onChange={action('clicked')} theme="primary" >{text("Label", "Primary")}</Checkbox>
+)
+
+export const Secondary = () => (
+  <Checkbox onChange={action('clicked')} theme="secondary" >{text("Label", "Secondary")}</Checkbox>
 )
