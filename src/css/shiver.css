@@ -1,0 +1,160 @@
+/* Colors */
+/* Snow Storm */
+/* Polar Night */
+/* Frost */
+/* Aurora */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+.primary {
+  background-color: #c8ccd2;
+  border-color: #c8ccd2;
+  color: #4c566a;
+}
+
+.info {
+  background-color: #88c0d0;
+  color: #2e3440;
+}
+
+.success {
+  background-color: #a3be8c;
+  border-color: #a3be8c;
+  color: #2e3440;
+}
+
+.warning {
+  background-color: #ebcb8b;
+  border-color: #ebcb8b;
+  color: #2e3440;
+}
+
+.danger {
+  background-color: #bf616a;
+  border-color: #bf616a;
+  color: #2e3440;
+}
+
+* {
+  font-family: "Rubik";
+  font-size: 1rem;
+  color: #2e3440;
+}
+
+.button {
+  position: relative;
+  height: 1.75rem;
+  padding: 0.05rem 0.75rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+  border-radius: 4px;
+  border-width: 1px solid;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-transition: background 0.2s ease;
+  -moz-transition: background 0.2s ease;
+  -o-transition: background 0.2s ease;
+  transition: color 200ms ease-in 0s, border-color 200ms ease-in 0s, background-color 200ms ease-in 0s, filter 200ms ease-in 0s;
+}
+.button:hover {
+  filter: brightness(90%);
+}
+
+/* Colors */
+/* Snow Storm */
+/* Polar Night */
+/* Frost */
+/* Aurora */
+.primary {
+  background-color: #c8ccd2;
+  border-color: #c8ccd2;
+  color: #4c566a;
+}
+
+.info {
+  background-color: #88c0d0;
+  color: #2e3440;
+}
+
+.success {
+  background-color: #a3be8c;
+  border-color: #a3be8c;
+  color: #2e3440;
+}
+
+.warning {
+  background-color: #ebcb8b;
+  border-color: #ebcb8b;
+  color: #2e3440;
+}
+
+.danger {
+  background-color: #bf616a;
+  border-color: #bf616a;
+  color: #2e3440;
+}
+
+.checkbox {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  cursor: pointer;
+  /* Hide the browser's default checkbox and customize the new checkbox */
+  /* Style the checkmark/indicator */
+}
+.checkbox input {
+  appearance: none;
+  height: 1.15rem;
+  width: 1.15rem;
+  border: 2px solid #c8ccd2;
+  border-radius: 5px;
+  outline: none;
+  transition-duration: 0.3s;
+  background-color: #c8ccd2;
+  cursor: pointer;
+  /* When the checkbox is checked, add a background */
+}
+.checkbox input:checked {
+  border: 2px solid #c8ccd2;
+  background-color: #c8ccd2;
+  /* Create the checkmark/indicator (hidden when not checked) */
+}
+.checkbox input:checked ~ .checkmark:after {
+  display: inline-flex;
+  align-items: center;
+}
+.checkbox .checkmark:after {
+  left: 10px;
+  top: 4.5px;
+  width: 5px;
+  height: 10px;
+  border: solid #2e3440;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* Show the checkmark when checked */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.primary input:checked {
+  border-color: #5e81ac;
+  background-color: #5e81ac;
+}
+
+.secondary input:checked {
+  border-color: #bf616a;
+  background-color: #bf616a;
+}
+
+/*# sourceMappingURL=shiver.css.map */

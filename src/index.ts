@@ -1,3 +1,3 @@
-import { Button } from "./components/atoms/Button/Button"
-import { Checkbox } from "./components/atoms/Checkbox/Checkbox"
+import { Button } from "./sass/components/atoms/Button/Button"
+import { Checkbox } from "./sass/components/atoms/Checkbox/Checkbox"
 export { Button, Checkbox }

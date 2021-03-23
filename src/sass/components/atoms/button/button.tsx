@@ -1,21 +1,24 @@
 import React, { FunctionComponent } from 'react'
-import "./Button.scss";
+import "./button.scss";
+
 export interface ButtonProps {
   /**
    * Set this to change button theme properties
    * @default primary
    */
-  theme:| "primary"
+  class:| "primary"
     | "info"
     | "success"
     | "warning"
     | "danger"
     | "disabled"
+    /*
     | "primary-outline"
     | "info-outline"
     | "success-outline"
     | "warning-outline"
     | "danger-outline"
+    */
     | "primary-flat";
 }
 
@@ -24,12 +27,10 @@ export const Button: FunctionComponent<ButtonProps> = ({
   theme, 
   ...rest 
 }) => (
-  <div>
-    <button 
-      className={`${theme}`} 
-      {...rest}
-    >
-      {children}
-    </button>
-  </div>
+  <button 
+    className={`${theme}`} 
+    {...rest}
+  >
+    {children}
+  </button>
 )

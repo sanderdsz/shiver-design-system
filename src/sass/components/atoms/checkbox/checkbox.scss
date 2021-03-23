@@ -1,5 +1,4 @@
-@import "../../../variables.scss";
-@import "../../../typography.scss";
+@import '../../../utils/variables.scss';
 
 .checkbox {
   display: inline-flex;
@@ -9,7 +8,7 @@
   cursor: pointer;
 
   /* Hide the browser's default checkbox and customize the new checkbox */
- input {
+ .input {
     appearance: none;
 
     height: 1.15rem;
@@ -26,8 +25,8 @@
 
     /* When the checkbox is checked, add a background */
     &:checked {
-      border: 2px solid $snow-04;
-      background-color: $snow-04;
+      border: 2px solid $frost-04;
+      background-color: $frost-04;
       /* Create the checkmark/indicator (hidden when not checked) */
       ~ {
         .checkmark {
@@ -62,22 +61,4 @@
 		position: absolute;
 		display: none;
 	}
-}
-
-.primary {
-  input {
-    &:checked {
-      border-color: $frost-04;
-      background-color: $frost-04;
-    }
-  }
-}
-
-.secondary {
-  input {
-    &:checked {
-      border-color: $aurora-01;
-      background-color: $aurora-01;
-    }
-  }
 }
