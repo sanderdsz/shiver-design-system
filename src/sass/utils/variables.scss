@@ -1,0 +1,74 @@
+/* Colors */
+/* Snow Storm */
+$snow-01: #eceff4;
+$snow-02: #e5e9f0;
+$snow-03: #d8dee9;
+$snow-04: #c8ccd2;
+
+/* Polar Night */
+$polar-night-01: #2e3440;
+$polar-night-02: #3b4252;
+$polar-night-03: #434c5e;
+$polar-night-04: #4c566a;
+
+/* Frost */
+$frost-01: #8fbcbb;
+$frost-02: #88c0d0;
+$frost-03: #81a1c1;
+$frost-04: #5e81ac;
+
+/* Aurora */
+$aurora-01: #bf616a;
+$aurora-02: #d08770;
+$aurora-03: #ebcb8b;
+$aurora-04: #a3be8c;
+$aurora-05: #b48ead;
+
+// Composed Colours
+$primary: $snow-04;
+$disabled: rgba($snow-03, 0.4);
+
+.primary {
+  background-color: $snow-04;
+  border-color: $snow-04;
+  color: $polar-night-04;
+}
+
+.info {
+  background-color: $frost-02;
+  color: $polar-night-01;
+}
+
+.success {
+  background-color: $aurora-04;
+  border-color: $aurora-04;
+  color: $polar-night-01;
+}
+
+.warning {
+  background-color: $aurora-03;
+  border-color: $aurora-03;
+  color: $polar-night-01;
+}
+
+.danger {
+  background-color: $aurora-01;
+  border-color: $aurora-01;
+  color: $polar-night-01;
+}
+
+.disabled {
+  background-color: rgba($snow-03, 0.4);
+  color: rgba($polar-night-04, 0.6);
+  opacity: 0.9;
+  box-shadow: none;
+  cursor: not-allowed;
+  &:hover {
+    cursor: not-allowed;
+  }
+}
+
+.primary-flat {
+  background-color: $snow-01;
+  color: $polar-night-04;
+}

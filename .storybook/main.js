@@ -10,7 +10,6 @@ module.exports = {
     "@storybook/addon-knobs",
     "@storybook/addon-actions",
     "@storybook/addon-viewport",
-    "@storybook/addon-storysource",
     {
       name: "@storybook/addon-docs",
       options: {
@@ -21,7 +20,7 @@ module.exports = {
   webpackFinal: async (config) => {
     config.module.rules.push({
       test: /\.scss$/,
-      use: ["style-loader", "css-loader?modules=true", "sass-loader"],
+      use: ["style-loader", "css-loader", "sass-loader"],
       include: path.resolve(__dirname, "../"),
     });
 
