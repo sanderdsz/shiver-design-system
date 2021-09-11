@@ -3,7 +3,7 @@
 /* Polar Night */
 /* Frost */
 /* Aurora */
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 .primary {
   background-color: #c8ccd2;
   border-color: #c8ccd2;
@@ -33,13 +33,79 @@
   color: #2e3440;
 }
 
+.disabled {
+  background-color: rgba(216, 222, 233, 0.4);
+  color: rgba(76, 86, 106, 0.6);
+  opacity: 0.9;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+.disabled:hover {
+  cursor: not-allowed;
+}
+
+.primary-flat {
+  background-color: #eceff4;
+  color: #4c566a;
+}
+
+/* Colors */
+/* Snow Storm */
+/* Polar Night */
+/* Frost */
+/* Aurora */
+.primary {
+  background-color: #c8ccd2;
+  border-color: #c8ccd2;
+  color: #4c566a;
+}
+
+.info {
+  background-color: #88c0d0;
+  color: #2e3440;
+}
+
+.success {
+  background-color: #a3be8c;
+  border-color: #a3be8c;
+  color: #2e3440;
+}
+
+.warning {
+  background-color: #ebcb8b;
+  border-color: #ebcb8b;
+  color: #2e3440;
+}
+
+.danger {
+  background-color: #bf616a;
+  border-color: #bf616a;
+  color: #2e3440;
+}
+
+.disabled {
+  background-color: rgba(216, 222, 233, 0.4);
+  color: rgba(76, 86, 106, 0.6);
+  opacity: 0.9;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+.disabled:hover {
+  cursor: not-allowed;
+}
+
+.primary-flat {
+  background-color: #eceff4;
+  color: #4c566a;
+}
+
 * {
-  font-family: "Rubik";
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
   color: #2e3440;
 }
 
-.button {
+button {
   position: relative;
   height: 1.75rem;
   padding: 0.05rem 0.75rem;
@@ -61,7 +127,7 @@
   -o-transition: background 0.2s ease;
   transition: color 200ms ease-in 0s, border-color 200ms ease-in 0s, background-color 200ms ease-in 0s, filter 200ms ease-in 0s;
 }
-.button:hover {
+button:hover {
   filter: brightness(90%);
 }
 
@@ -99,6 +165,22 @@
   color: #2e3440;
 }
 
+.disabled {
+  background-color: rgba(216, 222, 233, 0.4);
+  color: rgba(76, 86, 106, 0.6);
+  opacity: 0.9;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+.disabled:hover {
+  cursor: not-allowed;
+}
+
+.primary-flat {
+  background-color: #eceff4;
+  color: #4c566a;
+}
+
 .checkbox {
   display: inline-flex;
   position: relative;
@@ -107,7 +189,7 @@
   /* Hide the browser's default checkbox and customize the new checkbox */
   /* Style the checkmark/indicator */
 }
-.checkbox input {
+.checkbox .input {
   appearance: none;
   height: 1.15rem;
   width: 1.15rem;
@@ -119,12 +201,12 @@
   cursor: pointer;
   /* When the checkbox is checked, add a background */
 }
-.checkbox input:checked {
-  border: 2px solid #c8ccd2;
-  background-color: #c8ccd2;
+.checkbox .input:checked {
+  border: 2px solid #5e81ac;
+  background-color: #5e81ac;
   /* Create the checkmark/indicator (hidden when not checked) */
 }
-.checkbox input:checked ~ .checkmark:after {
+.checkbox .input:checked ~ .checkmark:after {
   display: inline-flex;
   align-items: center;
 }
@@ -145,16 +227,6 @@
   content: "";
   position: absolute;
   display: none;
-}
-
-.primary input:checked {
-  border-color: #5e81ac;
-  background-color: #5e81ac;
-}
-
-.secondary input:checked {
-  border-color: #bf616a;
-  background-color: #bf616a;
 }
 
 /*# sourceMappingURL=shiver.css.map */
