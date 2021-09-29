@@ -7,10 +7,36 @@
   <link rel="stylesheet" href="./css/shiver.css">
   <title>Document</title>
 </head>
-<body>
-  <div>
+<body class="background background__light">
+  <div class="container">
+    <button class="primary" onclick="switchMode()">dark mode</button>
+  </div>
+  <div class="container">
     <h1>hello world</h1>
   </div>
-  <button class="primary">Button</button>
+  <div class="container">
+    <button class="primary">Button</button>
+    <button class="secondary font__light">Button</button>
+    <button class="primary font__light">Button</button>
+    <button class="info font__light">Button</button>
+    <button class="success">Button</button>
+    <button class="warning">Button</button>
+    <button class="danger">Button</button>
+    <button class="disabled">Button</button>
+  </div>
+  <div class="container">
+    <button class="secondary rounded font__light">Rounded</button>
+  </div>
+  <div class="container">
+    <button class="outline rounded">Rounded</button>
+  </div>
+  <div class="container">
+    <input type="text" placeholder="Text input">
+  </div>
+  <script>
+    function switchMode() {
+      document.body.classList.toggle('background__dark');
+    }
+  </script>
 </body>
 </html>

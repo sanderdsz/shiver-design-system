@@ -34,6 +34,12 @@ $disabled: rgba($snow-03, 0.4);
   color: $polar-night-04;
 }
 
+.secondary {
+  background-color: $frost-04;
+  border-color: $frost-04;
+  color: $polar-night-04;
+}
+
 .info {
   background-color: $frost-02;
   color: $polar-night-01;
@@ -68,7 +74,23 @@ $disabled: rgba($snow-03, 0.4);
   }
 }
 
-.primary-flat {
-  background-color: $snow-01;
-  color: $polar-night-04;
+/* Backgrounds */
+
+.background {
+  transition: all 0.15s ease;
+  &__light {
+    background-color: $snow-01;
+  }
+  &__dark {
+    background-color: $polar-night-04;
+  }
+} 
+
+/* Fonts */
+.font__light {
+  color: #FFFFFF
+}
+
+.container {
+  padding: .5rem;
 }
