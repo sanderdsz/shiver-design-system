@@ -111,8 +111,12 @@ table {
 }
 
 /* Fonts */
-.font__light {
-  color: #FFFFFF;
+.font-light {
+  color: #eceff4;
+}
+
+.font-dark {
+  color: #4c566a;
 }
 
 .container {
@@ -182,8 +186,12 @@ table {
 }
 
 /* Fonts */
-.font__light {
-  color: #FFFFFF;
+.font-light {
+  color: #eceff4;
+}
+
+.font-dark {
+  color: #4c566a;
 }
 
 .container {
@@ -259,8 +267,12 @@ table {
 }
 
 /* Fonts */
-.font__light {
-  color: #FFFFFF;
+.font-light {
+  color: #eceff4;
+}
+
+.font-dark {
+  color: #4c566a;
 }
 
 .container {
@@ -269,25 +281,16 @@ table {
 
 button {
   position: relative;
-  height: 1.75rem;
-  padding: 0.05rem 0.75rem;
+  padding: 0.25rem 0.75rem;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
   text-align: center;
   cursor: pointer;
   user-select: none;
-  border: none;
+  font-size: 1rem;
   border-radius: 4px;
-  border-width: 1px solid;
-  box-sizing: border-box;
-  background-color: none;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-transition: background 0.2s ease;
-  -moz-transition: background 0.2s ease;
-  -o-transition: background 0.2s ease;
+  border: 1px solid;
   transition: color 200ms ease-in 0s, border-color 200ms ease-in 0s, background-color 200ms ease-in 0s, filter 200ms ease-in 0s;
 }
 button:hover {
@@ -299,12 +302,19 @@ button.rounded {
 button.outline {
   filter: none;
   background-color: #eceff4;
-  border: 2px solid;
-  border-color: #4c566a;
+  border: 2px solid #4c566a;
 }
 button.outline:hover {
   color: #5e81ac;
   border-color: #5e81ac;
+}
+button.small {
+  font-size: 0.75rem;
+  padding: 0.15rem 0.5rem;
+}
+button.large {
+  font-size: 1.25rem;
+  padding: 0.5rem 1rem;
 }
 
 /* Colors */
@@ -370,8 +380,12 @@ button.outline:hover {
 }
 
 /* Fonts */
-.font__light {
-  color: #FFFFFF;
+.font-light {
+  color: #eceff4;
+}
+
+.font-dark {
+  color: #4c566a;
 }
 
 .container {
@@ -489,8 +503,12 @@ button.outline:hover {
 }
 
 /* Fonts */
-.font__light {
-  color: #FFFFFF;
+.font-light {
+  color: #eceff4;
+}
+
+.font-dark {
+  color: #4c566a;
 }
 
 .container {

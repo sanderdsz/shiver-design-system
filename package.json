@@ -1,12 +1,14 @@
 {
   "name": "shiver-design-system",
-  "version": "1.0.0-alpha.6",
+  "version": "1.0.0-alpha.7",
   "main": "src/css/shiver.css",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@sanderdsz"
   },
   "description": "Shiver Design System",
-  "scripts": {},
+  "scripts": {
+    "start": "sass --watch ./src/sass/shiver.scss ./src/css/shiver.css"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sanderdsz/shiver-design-system.git"

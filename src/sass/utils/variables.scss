@@ -87,8 +87,12 @@ $disabled: rgba($snow-03, 0.4);
 } 
 
 /* Fonts */
-.font__light {
-  color: #FFFFFF
+.font-light {
+  color: $snow-01;
+}
+
+.font-dark {
+  color: $polar-night-04;
 }
 
 .container {
