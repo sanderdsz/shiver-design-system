@@ -14,19 +14,19 @@
     height: 1.15rem;
     width: 1.15rem;
     
-    border: 2px solid $snow-04;
+    border: 2px solid $white-04;
     border-radius: 5px;
     outline: none;
 
     transition-duration: 0.3s;
-    background-color: $snow-04;
+    background-color: $white-04;
 
     cursor: pointer;
 
     /* When the checkbox is checked, add a background */
     &:checked {
-      border: 2px solid $frost-04;
-      background-color: $frost-04;
+      border: 2px solid $blue-04;
+      background-color: $blue-04;
       /* Create the checkmark/indicator (hidden when not checked) */
       ~ {
         .checkmark {
@@ -45,7 +45,7 @@
       top: 4.5px;
       width: 5px;
       height: 10px;
-      border: solid $polar-night-01;
+      border: solid $gray-01;
       border-width: 0 2px 2px 0;
       -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
