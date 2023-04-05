@@ -1,71 +1,97 @@
 /* Colors */
-/* Snow Storm */
-$snow-01: #eceff4;
-$snow-02: #e5e9f0;
-$snow-03: #d8dee9;
-$snow-04: #c8ccd2;
+$primary: #88c0d0;
 
-/* Polar Night */
-$polar-night-01: #2e3440;
-$polar-night-02: #3b4252;
-$polar-night-03: #434c5e;
-$polar-night-04: #4c566a;
+$white-01: #eceff4;
+$white-02: #dadee3;
+$white-03: #d8dee9;
+$white-04: #d1d5db;
+$white-05: #c8ccd2;
 
-/* Frost */
-$frost-01: #8fbcbb;
-$frost-02: #88c0d0;
-$frost-03: #81a1c1;
-$frost-04: #5e81ac;
+$gray-01: #232730;
+$gray-02: #2e3440;
+$gray-03: #3b4252;
+$gray-04: #434c5e;
+$gray-05: #4c566a;
 
-/* Aurora */
+$blue-01: #AFC0D6;
+$blue-02: #9BB0CC;
+$blue-03: #87A1C1;
+$blue-04: #7291B7;
+$blue-05: #5E81AC;
+
+$cyan-01: #8FBCBB;
+$cyan-02: #86B0AF;
+$cyan-03: #7DA5A4;
+$cyan-04: #749998;
+$cyan-05: #6B8D8C;
+
+$red-01: #EFD8DA;
+$red-02: #DCACAD;
+$red-03: #bf616a;
+$red-04: #B65354;
+$red-05: #A32727;
+
+$yellow-01: #EBCB8B;
+$yellow-02: #E4BA84;
+$yellow-03: #DEA97E;
+$yellow-04: #D79877;
+$yellow-05: #D08770;
+
+$green-01: #A3BE8C;
+$green-02: #90AB7A;
+$green-03: #7D9768;
+$green-04: #6A8455;
+$green-05: #577043;
+
 $aurora-01: #bf616a;
 $aurora-02: #d08770;
 $aurora-03: #ebcb8b;
 $aurora-04: #a3be8c;
 $aurora-05: #b48ead;
+$aurora-06: #577043;
 
 // Composed Colours
-$primary: $snow-04;
-$disabled: rgba($snow-03, 0.4);
+$primary: $white-04;
+$disabled: rgba($white-03, 0.4);
 
 .primary {
-  background-color: $snow-04;
-  border-color: $snow-04;
-  color: $polar-night-04;
+  background-color: $white-04;
+  border-color: $white-04;
+  color: $gray-04;
 }
 
 .secondary {
-  background-color: $frost-04;
-  border-color: $frost-04;
-  color: $polar-night-04;
+  background-color: $blue-04;
+  border-color: $blue-04;
+  color: $gray-04;
 }
 
 .info {
-  background-color: $frost-02;
-  color: $polar-night-01;
+  background-color: $blue-02;
+  color: $gray-01;
 }
 
 .success {
   background-color: $aurora-04;
   border-color: $aurora-04;
-  color: $polar-night-01;
+  color: $gray-01;
 }
 
 .warning {
   background-color: $aurora-03;
   border-color: $aurora-03;
-  color: $polar-night-01;
+  color: $gray-01;
 }
 
 .danger {
   background-color: $aurora-01;
   border-color: $aurora-01;
-  color: $polar-night-01;
+  color: $gray-01;
 }
 
 .disabled {
-  background-color: rgba($snow-03, 0.4);
-  color: rgba($polar-night-04, 0.6);
+  background-color: rgba($white-03, 0.4);
+  color: rgba($gray-04, 0.6);
   opacity: 0.9;
   box-shadow: none;
   cursor: not-allowed;
@@ -79,20 +105,20 @@ $disabled: rgba($snow-03, 0.4);
 .background {
   transition: all 0.15s ease;
   &__light {
-    background-color: $snow-01;
+    background-color: $white-01;
   }
   &__dark {
-    background-color: $polar-night-04;
+    background-color: $gray-04;
   }
 } 
 
 /* Fonts */
 .font-light {
-  color: $snow-01;
+  color: $white-01;
 }
 
 .font-dark {
-  color: $polar-night-04;
+  color: $gray-04;
 }
 
 .container {
