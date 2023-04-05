@@ -1,15 +1,16 @@
 @import '../../../utils/variables.scss';
 
 input {
-  background-color: $snow-01;
-  border: 2px solid $snow-04;
+  padding: 0.25rem;
+  background-color: $white-01;
+  border: 2px solid $white-04;
   border-radius: 5px;
   transition: .25s;
   outline: none;
   &::placeholder {
-    color: $snow-04;
+    color: $white-04;
   }
   &:focus {
-    border: 2px solid $frost-03;
+    border: 2px solid $blue-03;
   }
 }

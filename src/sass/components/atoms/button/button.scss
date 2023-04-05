@@ -21,11 +21,11 @@ button {
   }
   &.outline {
     filter: none;
-    background-color: $snow-01;
-    border: 2px solid $polar-night-04;
+    background-color: $white-01;
+    border: 2px solid $gray-04;
     &:hover {
-      color: $frost-04;
-      border-color: $frost-04;
+      color: $blue-04;
+      border-color: $blue-04;
     }
   }
   &.small {
