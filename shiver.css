@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -123,6 +123,26 @@ table {
   padding: 0.5rem;
 }
 
+:export {
+  snow01: #eceff4;
+  snow-02: #e5e9f0;
+  snow-03: #d8dee9;
+  snow-04: #c8ccd2;
+  polar-night-01: #2e3440;
+  polar-night-02: #3b4252;
+  polar-night-03: #434c5e;
+  polar-night-04: #4c566a;
+  frost-01: #8fbcbb;
+  frost-02: #88c0d0;
+  frost-03: #81a1c1;
+  frost-04: #5e81ac;
+  aurora-01: #bf616a;
+  aurora-02: #d08770;
+  aurora-03: #ebcb8b;
+  aurora-04: #a3be8c;
+  aurora-05: #b48ead;
+}
+
 /* Colors */
 /* Snow Storm */
 /* Polar Night */
@@ -196,11 +216,30 @@ table {
 
 .container {
   padding: 0.5rem;
+}
+
+:export {
+  snow01: #eceff4;
+  snow-02: #e5e9f0;
+  snow-03: #d8dee9;
+  snow-04: #c8ccd2;
+  polar-night-01: #2e3440;
+  polar-night-02: #3b4252;
+  polar-night-03: #434c5e;
+  polar-night-04: #4c566a;
+  frost-01: #8fbcbb;
+  frost-02: #88c0d0;
+  frost-03: #81a1c1;
+  frost-04: #5e81ac;
+  aurora-01: #bf616a;
+  aurora-02: #d08770;
+  aurora-03: #ebcb8b;
+  aurora-04: #a3be8c;
+  aurora-05: #b48ead;
 }
 
 * {
-  font-family: "Inter", sans-serif;
-  font-size: 1rem;
+  font-family: "Rubik", sans-serif;
   color: #2e3440;
 }
 
@@ -277,6 +316,26 @@ table {
 
 .container {
   padding: 0.5rem;
+}
+
+:export {
+  snow01: #eceff4;
+  snow-02: #e5e9f0;
+  snow-03: #d8dee9;
+  snow-04: #c8ccd2;
+  polar-night-01: #2e3440;
+  polar-night-02: #3b4252;
+  polar-night-03: #434c5e;
+  polar-night-04: #4c566a;
+  frost-01: #8fbcbb;
+  frost-02: #88c0d0;
+  frost-03: #81a1c1;
+  frost-04: #5e81ac;
+  aurora-01: #bf616a;
+  aurora-02: #d08770;
+  aurora-03: #ebcb8b;
+  aurora-04: #a3be8c;
+  aurora-05: #b48ead;
 }
 
 button {
@@ -390,6 +449,26 @@ button.large {
 
 .container {
   padding: 0.5rem;
+}
+
+:export {
+  snow01: #eceff4;
+  snow-02: #e5e9f0;
+  snow-03: #d8dee9;
+  snow-04: #c8ccd2;
+  polar-night-01: #2e3440;
+  polar-night-02: #3b4252;
+  polar-night-03: #434c5e;
+  polar-night-04: #4c566a;
+  frost-01: #8fbcbb;
+  frost-02: #88c0d0;
+  frost-03: #81a1c1;
+  frost-04: #5e81ac;
+  aurora-01: #bf616a;
+  aurora-02: #d08770;
+  aurora-03: #ebcb8b;
+  aurora-04: #a3be8c;
+  aurora-05: #b48ead;
 }
 
 .checkbox {
@@ -515,7 +594,28 @@ button.large {
   padding: 0.5rem;
 }
 
+:export {
+  snow01: #eceff4;
+  snow-02: #e5e9f0;
+  snow-03: #d8dee9;
+  snow-04: #c8ccd2;
+  polar-night-01: #2e3440;
+  polar-night-02: #3b4252;
+  polar-night-03: #434c5e;
+  polar-night-04: #4c566a;
+  frost-01: #8fbcbb;
+  frost-02: #88c0d0;
+  frost-03: #81a1c1;
+  frost-04: #5e81ac;
+  aurora-01: #bf616a;
+  aurora-02: #d08770;
+  aurora-03: #ebcb8b;
+  aurora-04: #a3be8c;
+  aurora-05: #b48ead;
+}
+
 input {
+  padding: 0.25rem;
   background-color: #eceff4;
   border: 2px solid #c8ccd2;
   border-radius: 5px;
