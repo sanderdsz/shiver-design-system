@@ -1,0 +1,9 @@
+@import '../../../utils/variables.scss';
+
+.avatar {
+  vertical-align: middle;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: $gray-02;
+}
