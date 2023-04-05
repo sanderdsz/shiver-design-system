@@ -1,0 +1,941 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Colors */
+.primary {
+  background-color: #d1d5db;
+  border-color: #d1d5db;
+  color: #434c5e;
+}
+
+.secondary {
+  background-color: #7291B7;
+  border-color: #7291B7;
+  color: #434c5e;
+}
+
+.info {
+  background-color: #9BB0CC;
+  color: #232730;
+}
+
+.success {
+  background-color: #a3be8c;
+  border-color: #a3be8c;
+  color: #232730;
+}
+
+.warning {
+  background-color: #ebcb8b;
+  border-color: #ebcb8b;
+  color: #232730;
+}
+
+.danger {
+  background-color: #bf616a;
+  border-color: #bf616a;
+  color: #232730;
+}
+
+.disabled {
+  background-color: rgba(216, 222, 233, 0.4);
+  color: rgba(67, 76, 94, 0.6);
+  opacity: 0.9;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+.disabled:hover {
+  cursor: not-allowed;
+}
+
+/* Backgrounds */
+.background {
+  transition: all 0.15s ease;
+}
+.background__light {
+  background-color: #eceff4;
+}
+.background__dark {
+  background-color: #434c5e;
+}
+
+/* Fonts */
+.font-light {
+  color: #eceff4;
+}
+
+.font-dark {
+  color: #434c5e;
+}
+
+.container {
+  padding: 0.5rem;
+}
+
+/* Colors */
+.primary {
+  background-color: #d1d5db;
+  border-color: #d1d5db;
+  color: #434c5e;
+}
+
+.secondary {
+  background-color: #7291B7;
+  border-color: #7291B7;
+  color: #434c5e;
+}
+
+.info {
+  background-color: #9BB0CC;
+  color: #232730;
+}
+
+.success {
+  background-color: #a3be8c;
+  border-color: #a3be8c;
+  color: #232730;
+}
+
+.warning {
+  background-color: #ebcb8b;
+  border-color: #ebcb8b;
+  color: #232730;
+}
+
+.danger {
+  background-color: #bf616a;
+  border-color: #bf616a;
+  color: #232730;
+}
+
+.disabled {
+  background-color: rgba(216, 222, 233, 0.4);
+  color: rgba(67, 76, 94, 0.6);
+  opacity: 0.9;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+.disabled:hover {
+  cursor: not-allowed;
+}
+
+/* Backgrounds */
+.background {
+  transition: all 0.15s ease;
+}
+.background__light {
+  background-color: #eceff4;
+}
+.background__dark {
+  background-color: #434c5e;
+}
+
+/* Fonts */
+.font-light {
+  color: #eceff4;
+}
+
+.font-dark {
+  color: #434c5e;
+}
+
+.container {
+  padding: 0.5rem;
+}
+
+* {
+  font-family: "Rubik", sans-serif;
+  color: #232730;
+}
+
+/* Colors */
+.primary {
+  background-color: #d1d5db;
+  border-color: #d1d5db;
+  color: #434c5e;
+}
+
+.secondary {
+  background-color: #7291B7;
+  border-color: #7291B7;
+  color: #434c5e;
+}
+
+.info {
+  background-color: #9BB0CC;
+  color: #232730;
+}
+
+.success {
+  background-color: #a3be8c;
+  border-color: #a3be8c;
+  color: #232730;
+}
+
+.warning {
+  background-color: #ebcb8b;
+  border-color: #ebcb8b;
+  color: #232730;
+}
+
+.danger {
+  background-color: #bf616a;
+  border-color: #bf616a;
+  color: #232730;
+}
+
+.disabled {
+  background-color: rgba(216, 222, 233, 0.4);
+  color: rgba(67, 76, 94, 0.6);
+  opacity: 0.9;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.disabled:hover {
+  cursor: not-allowed;
+}
+
+/* Backgrounds */
+.background {
+  transition: all 0.15s ease;
+}
+
+.background__light {
+  background-color: #eceff4;
+}
+
+.background__dark {
+  background-color: #434c5e;
+}
+
+/* Fonts */
+.font-light {
+  color: #eceff4;
+}
+
+.font-dark {
+  color: #434c5e;
+}
+
+.container {
+  padding: 0.5rem;
+}
+
+.text-snow-01 {
+  color: #eceff4;
+}
+
+/* Colors */
+.primary {
+  background-color: #d1d5db;
+  border-color: #d1d5db;
+  color: #434c5e;
+}
+
+.secondary {
+  background-color: #7291B7;
+  border-color: #7291B7;
+  color: #434c5e;
+}
+
+.info {
+  background-color: #9BB0CC;
+  color: #232730;
+}
+
+.success {
+  background-color: #a3be8c;
+  border-color: #a3be8c;
+  color: #232730;
+}
+
+.warning {
+  background-color: #ebcb8b;
+  border-color: #ebcb8b;
+  color: #232730;
+}
+
+.danger {
+  background-color: #bf616a;
+  border-color: #bf616a;
+  color: #232730;
+}
+
+.disabled {
+  background-color: rgba(216, 222, 233, 0.4);
+  color: rgba(67, 76, 94, 0.6);
+  opacity: 0.9;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+.disabled:hover {
+  cursor: not-allowed;
+}
+
+/* Backgrounds */
+.background {
+  transition: all 0.15s ease;
+}
+.background__light {
+  background-color: #eceff4;
+}
+.background__dark {
+  background-color: #434c5e;
+}
+
+/* Fonts */
+.font-light {
+  color: #eceff4;
+}
+
+.font-dark {
+  color: #434c5e;
+}
+
+.container {
+  padding: 0.5rem;
+}
+
+button {
+  position: relative;
+  padding: 0.25rem 0.75rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid;
+  transition: color 200ms ease-in 0s, border-color 200ms ease-in 0s, background-color 200ms ease-in 0s, filter 200ms ease-in 0s;
+}
+button:hover {
+  filter: brightness(95%);
+}
+button.rounded {
+  border-radius: 20px;
+}
+button.outline {
+  filter: none;
+  background-color: #eceff4;
+  border: 2px solid #434c5e;
+}
+button.outline:hover {
+  color: #7291B7;
+  border-color: #7291B7;
+}
+button.small {
+  font-size: 0.75rem;
+  padding: 0.15rem 0.5rem;
+}
+button.large {
+  font-size: 1.25rem;
+  padding: 0.5rem 1rem;
+}
+
+/* Colors */
+.primary {
+  background-color: #d1d5db;
+  border-color: #d1d5db;
+  color: #434c5e;
+}
+
+.secondary {
+  background-color: #7291B7;
+  border-color: #7291B7;
+  color: #434c5e;
+}
+
+.info {
+  background-color: #9BB0CC;
+  color: #232730;
+}
+
+.success {
+  background-color: #a3be8c;
+  border-color: #a3be8c;
+  color: #232730;
+}
+
+.warning {
+  background-color: #ebcb8b;
+  border-color: #ebcb8b;
+  color: #232730;
+}
+
+.danger {
+  background-color: #bf616a;
+  border-color: #bf616a;
+  color: #232730;
+}
+
+.disabled {
+  background-color: rgba(216, 222, 233, 0.4);
+  color: rgba(67, 76, 94, 0.6);
+  opacity: 0.9;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+.disabled:hover {
+  cursor: not-allowed;
+}
+
+/* Backgrounds */
+.background {
+  transition: all 0.15s ease;
+}
+.background__light {
+  background-color: #eceff4;
+}
+.background__dark {
+  background-color: #434c5e;
+}
+
+/* Fonts */
+.font-light {
+  color: #eceff4;
+}
+
+.font-dark {
+  color: #434c5e;
+}
+
+.container {
+  padding: 0.5rem;
+}
+
+.checkbox {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  cursor: pointer;
+  /* Hide the browser's default checkbox and customize the new checkbox */
+  /* Style the checkmark/indicator */
+}
+.checkbox .input {
+  appearance: none;
+  height: 1.15rem;
+  width: 1.15rem;
+  border: 2px solid #d1d5db;
+  border-radius: 5px;
+  outline: none;
+  transition-duration: 0.3s;
+  background-color: #d1d5db;
+  cursor: pointer;
+  /* When the checkbox is checked, add a background */
+}
+.checkbox .input:checked {
+  border: 2px solid #7291B7;
+  background-color: #7291B7;
+  /* Create the checkmark/indicator (hidden when not checked) */
+}
+.checkbox .input:checked ~ .checkmark:after {
+  display: inline-flex;
+  align-items: center;
+}
+.checkbox .checkmark:after {
+  left: 10px;
+  top: 4.5px;
+  width: 5px;
+  height: 10px;
+  border: solid #232730;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* Show the checkmark when checked */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Colors */
+.primary {
+  background-color: #d1d5db;
+  border-color: #d1d5db;
+  color: #434c5e;
+}
+
+.secondary {
+  background-color: #7291B7;
+  border-color: #7291B7;
+  color: #434c5e;
+}
+
+.info {
+  background-color: #9BB0CC;
+  color: #232730;
+}
+
+.success {
+  background-color: #a3be8c;
+  border-color: #a3be8c;
+  color: #232730;
+}
+
+.warning {
+  background-color: #ebcb8b;
+  border-color: #ebcb8b;
+  color: #232730;
+}
+
+.danger {
+  background-color: #bf616a;
+  border-color: #bf616a;
+  color: #232730;
+}
+
+.disabled {
+  background-color: rgba(216, 222, 233, 0.4);
+  color: rgba(67, 76, 94, 0.6);
+  opacity: 0.9;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+.disabled:hover {
+  cursor: not-allowed;
+}
+
+/* Backgrounds */
+.background {
+  transition: all 0.15s ease;
+}
+.background__light {
+  background-color: #eceff4;
+}
+.background__dark {
+  background-color: #434c5e;
+}
+
+/* Fonts */
+.font-light {
+  color: #eceff4;
+}
+
+.font-dark {
+  color: #434c5e;
+}
+
+.container {
+  padding: 0.5rem;
+}
+
+input {
+  padding: 0.25rem;
+  background-color: #eceff4;
+  border: 2px solid #d1d5db;
+  border-radius: 5px;
+  transition: 0.25s;
+  outline: none;
+}
+input::placeholder {
+  color: #d1d5db;
+}
+input:focus {
+  border: 2px solid #87A1C1;
+}
+
+/* Colors */
+.primary {
+  background-color: #d1d5db;
+  border-color: #d1d5db;
+  color: #434c5e;
+}
+
+.secondary {
+  background-color: #7291B7;
+  border-color: #7291B7;
+  color: #434c5e;
+}
+
+.info {
+  background-color: #9BB0CC;
+  color: #232730;
+}
+
+.success {
+  background-color: #a3be8c;
+  border-color: #a3be8c;
+  color: #232730;
+}
+
+.warning {
+  background-color: #ebcb8b;
+  border-color: #ebcb8b;
+  color: #232730;
+}
+
+.danger {
+  background-color: #bf616a;
+  border-color: #bf616a;
+  color: #232730;
+}
+
+.disabled {
+  background-color: rgba(216, 222, 233, 0.4);
+  color: rgba(67, 76, 94, 0.6);
+  opacity: 0.9;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+.disabled:hover {
+  cursor: not-allowed;
+}
+
+/* Backgrounds */
+.background {
+  transition: all 0.15s ease;
+}
+.background__light {
+  background-color: #eceff4;
+}
+.background__dark {
+  background-color: #434c5e;
+}
+
+/* Fonts */
+.font-light {
+  color: #eceff4;
+}
+
+.font-dark {
+  color: #434c5e;
+}
+
+.container {
+  padding: 0.5rem;
+}
+
+.avatar {
+  vertical-align: middle;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #2e3440;
+}
+
+/* Colors */
+.primary {
+  background-color: #d1d5db;
+  border-color: #d1d5db;
+  color: #434c5e;
+}
+
+.secondary {
+  background-color: #7291B7;
+  border-color: #7291B7;
+  color: #434c5e;
+}
+
+.info {
+  background-color: #9BB0CC;
+  color: #232730;
+}
+
+.success {
+  background-color: #a3be8c;
+  border-color: #a3be8c;
+  color: #232730;
+}
+
+.warning {
+  background-color: #ebcb8b;
+  border-color: #ebcb8b;
+  color: #232730;
+}
+
+.danger {
+  background-color: #bf616a;
+  border-color: #bf616a;
+  color: #232730;
+}
+
+.disabled {
+  background-color: rgba(216, 222, 233, 0.4);
+  color: rgba(67, 76, 94, 0.6);
+  opacity: 0.9;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.disabled:hover {
+  cursor: not-allowed;
+}
+
+/* Backgrounds */
+.background {
+  transition: all 0.15s ease;
+}
+
+.background__light {
+  background-color: #eceff4;
+}
+
+.background__dark {
+  background-color: #434c5e;
+}
+
+/* Fonts */
+.font-light {
+  color: #eceff4;
+}
+
+.font-dark {
+  color: #434c5e;
+}
+
+.container {
+  padding: 0.5rem;
+}
+
+progress {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 1.25rem;
+  border: none;
+  background-color: #d8dee9;
+  border-radius: 10px;
+  /*
+  the background-image appears only in
+  the indeterminate state, being overridden
+  when there's a value in the progress
+  */
+  background-image: url("data:image/svg+xml;base64,PHN2ZyBmaWxsPSdsaWdodGdyYXknIGhlaWdodD0nMjAnIHdpZHRoPSczNScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48cGF0aCBkPSdNMCAyMCBMMTcgMCBIMzUgTDE3IDIwIFonLz48L3N2Zz4=");
+  background-image: linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%);
+  background-size: 35px 1.25rem;
+  animation-name: animate-indeterminate;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  margin-bottom: 3px;
+  /*
+  for old browsers that does not
+  support the progress element at all
+  */
+}
+progress:before {
+  content: "";
+  line-height: 1.25rem;
+  color: #232730;
+  text-align: center;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 1.25rem;
+  border: none;
+  background-color: #d8dee9;
+  border-radius: 10px;
+  /*
+  the background-image appears only in
+  the indeterminate state, being overridden
+  when there's a value in the progress
+  */
+  background-image: url("data:image/svg+xml;base64,PHN2ZyBmaWxsPSdsaWdodGdyYXknIGhlaWdodD0nMjAnIHdpZHRoPSczNScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48cGF0aCBkPSdNMCAyMCBMMTcgMCBIMzUgTDE3IDIwIFonLz48L3N2Zz4=");
+  background-image: linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%);
+  background-size: 35px 1.25rem;
+  animation-name: animate-indeterminate;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+progress::-webkit-progress-bar, progress::before {
+  /*
+  Webkit supports ::before on the
+  progress, we need to remove it
+  */
+  display: none;
+}
+progress::-ms-fill {
+  animation-name: none;
+}
+progress::-webkit-progress-bar, progress::after {
+  /*
+  this creates an animated overlay on webkit
+  with progress:after styles here applied to
+  ::-webkit-progress-bar will be reset later
+  */
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 1.25rem;
+  border: none;
+  background-color: #d8dee9;
+  border-radius: 10px;
+  /*
+  the background-image appears only in
+  the indeterminate state, being overridden
+  when there's a value in the progress
+  */
+  background-image: url("data:image/svg+xml;base64,PHN2ZyBmaWxsPSdsaWdodGdyYXknIGhlaWdodD0nMjAnIHdpZHRoPSczNScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48cGF0aCBkPSdNMCAyMCBMMTcgMCBIMzUgTDE3IDIwIFonLz48L3N2Zz4=");
+  background-image: linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%);
+  background-size: 35px 1.25rem;
+  animation-name: animate-indeterminate;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  content: "";
+  position: absolute;
+  top: 0px;
+  background-color: transparent;
+  box-shadow: none;
+}
+progress::-webkit-progress-bar {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 1.25rem;
+  border: none;
+  background-color: #d8dee9;
+  border-radius: 10px;
+  /*
+  the background-image appears only in
+  the indeterminate state, being overridden
+  when there's a value in the progress
+  */
+  background-image: url("data:image/svg+xml;base64,PHN2ZyBmaWxsPSdsaWdodGdyYXknIGhlaWdodD0nMjAnIHdpZHRoPSczNScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48cGF0aCBkPSdNMCAyMCBMMTcgMCBIMzUgTDE3IDIwIFonLz48L3N2Zz4=");
+  background-image: linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%);
+  background-size: 35px 1.25rem;
+  animation-name: animate-indeterminate;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  background-image: none;
+}
+progress::-moz-progress-bar {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 1.25rem;
+  border: none;
+  background-color: #d8dee9;
+  border-radius: 10px;
+  /*
+  the background-image appears only in
+  the indeterminate state, being overridden
+  when there's a value in the progress
+  */
+  background-image: url("data:image/svg+xml;base64,PHN2ZyBmaWxsPSdsaWdodGdyYXknIGhlaWdodD0nMjAnIHdpZHRoPSczNScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48cGF0aCBkPSdNMCAyMCBMMTcgMCBIMzUgTDE3IDIwIFonLz48L3N2Zz4=");
+  background-image: linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%);
+  background-size: 35px 1.25rem;
+  animation-name: animate-indeterminate;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+progress[value] {
+  background-image: none;
+  color: #7291B7;
+}
+progress[value]:before {
+  content: attr(value) " / " attr(max);
+}
+progress[value]::-webkit-progress-value {
+  background-color: #7291B7;
+}
+progress[value]::-moz-progress-bar {
+  background-color: #7291B7;
+}
+progress[value]::-ms-fill {
+  border: none;
+  border-radius: 10px;
+}
+progress[value]::-webkit-progress-bar, progress[value]::after {
+  background-image: none;
+}
+progress[value]::-webkit-progress-value {
+  border-radius: 10px;
+}
+progress[value]::-moz-progress-bar {
+  background-image: none;
+}
+progress[value].progress-success {
+  color: #6A8455;
+}
+progress[value].progress-success::-webkit-progress-value {
+  background-color: #6A8455;
+}
+progress[value].progress-success::-moz-progress-bar {
+  background-color: #6A8455;
+}
+progress[value].progress-warning {
+  color: #EBCB8B;
+}
+progress[value].progress-warning::-webkit-progress-value {
+  background-color: #EBCB8B;
+}
+progress[value].progress-warning::-moz-progress-bar {
+  background-color: #EBCB8B;
+}
+progress[value].progress-danger {
+  color: #B65354;
+}
+progress[value].progress-danger::-webkit-progress-value {
+  background-color: #B65354;
+}
+progress[value].progress-danger::-moz-progress-bar {
+  background-color: #B65354;
+}
+
+@keyframes animate-indeterminate {
+  from {
+    background-position-x: 0px;
+  }
+  to {
+    background-position-x: 35px;
+  }
+}
+
+/*# sourceMappingURL=shiver.css.map */
