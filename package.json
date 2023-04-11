@@ -1,6 +1,6 @@
 {
   "name": "shiver-design-system",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "description": "Shiver Design System",
   "main": "./src/css/shiver.css",
   "scripts": {
